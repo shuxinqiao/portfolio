@@ -1,20 +1,14 @@
 <script setup>
 import { Transition, TransitionGroup, ref, onMounted } from "vue";
 import { gsap } from 'gsap';
+import { commonAPI } from '../api/common.js';
 
+const { LinkedInClick, GithubClick } = commonAPI();
 
 const introText = ref('I\'m a recent graduate Computing Science & Statistics student at the University of Alberta.')
 const introTextShow = ref('')
 var i = 0;
 
-
-function LinkedInClick() {
-    window.open("https://www.linkedin.com/in/shuxin-qiao-212265203",'_blank')
-};
-
-function GithubClick() {
-    window.open("https://github.com/shuxinqiao",'_blank')
-};
 
 function typeWriter() {
     if (i < introText.value.length) {
@@ -112,61 +106,62 @@ function btnEnter(el, done) {
         </video>
         
         <div class="Hero-content">
+            <div>
 
-            <transition name="text" appear
-                @before-enter="introBeforeEnter"
-                @enter="introEnter"
-                :css="false"
-            >
-                <h1 style="display:inline" id="intro">
-                    Hi, I'm 
-                </h1>
-            </transition>
-            <Transition name="text" appear
-                @before-enter="nameBeforeEnter"
-                @enter="nameEnter"
-                :css="false"
-            >   
-                <h1 style="display:inline" id="name">
-                    Shuxin.
-                </h1>
-            </Transition>
-            
-            <Transition name="text" appear
-                @before-enter="introTextBeforeEnter"
-                @enter="introTextEnter"
-                :css="false"
-            >
-               <p id="intro_text">{{ introTextShow }}</p> 
-            </Transition>
-            
+                <transition name="text" appear
+                    @before-enter="introBeforeEnter"
+                    @enter="introEnter"
+                    :css="false"
+                >
+                    <h1 style="display:inline" id="intro">
+                        Hi, I'm 
+                    </h1>
+                </transition>
+                <Transition name="text" appear
+                    @before-enter="nameBeforeEnter"
+                    @enter="nameEnter"
+                    :css="false"
+                >   
+                    <h1 style="display:inline" id="name">
+                        Shuxin.
+                    </h1>
+                </Transition>
+                
+                <Transition name="text" appear
+                    @before-enter="introTextBeforeEnter"
+                    @enter="introTextEnter"
+                    :css="false"
+                >
+                <p id="intro_text">{{ introTextShow }}</p> 
+                </Transition>
+                
 
-        </div>
-        
-        <div class="Hero-content buttons">
+            </div>
             
-            <Transition appear
-                @before-enter="btnBeforeEnter"
-                @enter="btnEnter"
-                :css="false"
-            >
-            <v-btn class="btn" @click="LinkedInClick" variant="outlined" size="large">
-                <v-icon start icon="mdi-linkedin"></v-icon>
-                LinkedIn    
-            </v-btn>
-            </Transition>
-            <Transition appear
-                @before-enter="btnBeforeEnter"
-                @enter="btnEnter"
-                :css="false"
-            >
-            <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
-                <v-icon start icon="mdi-github"></v-icon>
-                Github   
-            </v-btn>
-            </Transition>
+            <div class="buttons">
+                
+                <Transition appear
+                    @before-enter="btnBeforeEnter"
+                    @enter="btnEnter"
+                    :css="false"
+                >
+                <v-btn class="btn" @click="LinkedInClick" variant="outlined" size="large">
+                    <v-icon start icon="mdi-linkedin"></v-icon>
+                    LinkedIn    
+                </v-btn>
+                </Transition>
+                <Transition appear
+                    @before-enter="btnBeforeEnter"
+                    @enter="btnEnter"
+                    :css="false"
+                >
+                <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
+                    <v-icon start icon="mdi-github"></v-icon>
+                    Github   
+                </v-btn>
+                </Transition>
+            </div>
         </div>
-    
     
     </div>
 </template>
@@ -195,13 +190,13 @@ function btnEnter(el, done) {
     position: absolute;
     top: 45vh;
     left: 0;
-    z-index:1;
+    z-index: 1;
 }
 
 .buttons {
     font-family: 'roboto';
     padding: 20px;
-    margin-top: 20vh;
+    top: 65vh;
     justify-content: center;
 }
 

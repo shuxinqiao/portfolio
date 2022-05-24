@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue';
 import Hero from './components/Hero.vue';
 import AboutMe from './components/AboutMe.vue';
+import IndigoFooter from './components/IndigoFooter.vue';
 </script>
 
 <template>
@@ -14,9 +15,14 @@ import AboutMe from './components/AboutMe.vue';
     </div>
     
     <div class="content">
-      <AboutMe/>
+
+      <div class="testblock">asd</div>
+      <div class="testblock">zxc</div>
     </div>
 
+    <div class="footer">
+      <IndigoFooter/>
+    </div>
 
 
   </div>
@@ -24,8 +30,10 @@ import AboutMe from './components/AboutMe.vue';
 </template>
 
 <style>
+@import url(http://fonts.cdnfonts.com/css/roboto);
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif, rotobo;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -46,8 +54,6 @@ body, html {
 
 .content {
   display: flex;
-  margin-left: 20vh;
-  margin-right: 20vh; 
   justify-content: center;
 }
 
