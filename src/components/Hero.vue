@@ -107,59 +107,70 @@ function btnEnter(el, done) {
         
         <div class="Hero-content">
             <div>
-
-                <transition name="text" appear
-                    @before-enter="introBeforeEnter"
-                    @enter="introEnter"
-                    :css="false"
-                >
-                    <h1 style="display:inline" id="intro">
-                        Hi, I'm 
-                    </h1>
-                </transition>
-                <Transition name="text" appear
-                    @before-enter="nameBeforeEnter"
-                    @enter="nameEnter"
-                    :css="false"
-                >   
-                    <h1 style="display:inline" id="name">
-                        Shuxin.
-                    </h1>
-                </Transition>
-                
+                <div class="nameIntro">
+                    <transition name="text" appear
+                        @before-enter="introBeforeEnter"
+                        @enter="introEnter"
+                        :css="false"
+                    >
+                        <h1 style="display:inline" id="intro">
+                            Hi, I'm 
+                        </h1>
+                    </transition>
+                    <Transition name="text" appear
+                        @before-enter="nameBeforeEnter"
+                        @enter="nameEnter"
+                        :css="false"
+                    >   
+                        <h1 style="display:inline" id="name">
+                            Shuxin.
+                        </h1>
+                    </Transition>
+                </div>
                 <Transition name="text" appear
                     @before-enter="introTextBeforeEnter"
                     @enter="introTextEnter"
                     :css="false"
                 >
-                <p id="intro_text">{{ introTextShow }}</p> 
+                    <p id="intro_text">{{ introTextShow }}</p> 
                 </Transition>
                 
 
             </div>
             
             <div class="buttons">
+
+                <Transition appear
+                    @before-enter="btnBeforeEnter"
+                    @enter="btnEnter"
+                    :css="false"
+                >
+                    <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
+                        <v-icon start icon="mdi-file-account"></v-icon>
+                        Resume   
+                    </v-btn>
+                </Transition>
+                <Transition appear
+                    @before-enter="btnBeforeEnter"
+                    @enter="btnEnter"
+                    :css="false"
+                >
+                    <v-btn class="btn" @click="LinkedInClick" variant="outlined" size="large">
+                        <v-icon start icon="mdi-linkedin"></v-icon>
+                        LinkedIn    
+                    </v-btn>
+                </Transition>
+                <Transition appear
+                    @before-enter="btnBeforeEnter"
+                    @enter="btnEnter"
+                    :css="false"
+                >
+                    <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
+                        <v-icon start icon="mdi-github"></v-icon>
+                        Github   
+                    </v-btn>
+                </Transition>
                 
-                <Transition appear
-                    @before-enter="btnBeforeEnter"
-                    @enter="btnEnter"
-                    :css="false"
-                >
-                <v-btn class="btn" @click="LinkedInClick" variant="outlined" size="large">
-                    <v-icon start icon="mdi-linkedin"></v-icon>
-                    LinkedIn    
-                </v-btn>
-                </Transition>
-                <Transition appear
-                    @before-enter="btnBeforeEnter"
-                    @enter="btnEnter"
-                    :css="false"
-                >
-                <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
-                    <v-icon start icon="mdi-github"></v-icon>
-                    Github   
-                </v-btn>
-                </Transition>
             </div>
         </div>
     
@@ -192,11 +203,15 @@ function btnEnter(el, done) {
     left: 0;
 }
 
+.nameIntro {
+    align-self: center;
+}
+
 .buttons {
-    font-family: 'Bungee';
+    font-family: 'roboto';
     padding: 20px;
+    padding-right: 75px;
     top: 65vh;
-    justify-content: center;
 }
 
 .btn {
@@ -219,7 +234,6 @@ function btnEnter(el, done) {
 
 .btn + .btn {
     margin-left: 20px;
-    margin-right: 50px;
 }
 
 #intro {

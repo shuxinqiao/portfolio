@@ -30,7 +30,7 @@ import IndigoFooter from './components/IndigoFooter.vue';
 @import url(http://fonts.cdnfonts.com/css/roboto);
 
 #app {
-  font-family: Century Gothic, rotobo;
+  font-family: Century Gothic, roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -7,23 +7,37 @@
     <div class="wholeSplit">
 
         <div class="leftSplit">
-            <p>what</p>
         </div>
 
         <div class="middleSplit">
+
+            <h2 class="subTitle" id="AboutMe">About Me</h2>
             
-            <p>a</p>
-            <p>b</p>
-            <p>c</p>
+            <div class="aboutMeContent">
+                <p>Hi`How yo doing. Having a nice break, ahah?</p>
+            </div>
+            
+
+            <h2 class="subTitle" id="Projects">Projects</h2>
+
+            
+            <div class="projectSec">
+
+            </div>
             
         </div>
         
+
         <div class="rightSplit">
             
             <div class="stickyNav">
                 <h3 class="NavContent">Contents</h3>
                 <div class="NavItems">
                     <a href="#headerNav" class="Navitem">Header</a>
+                    <a href="#AboutMe" class="Navitem">About Me</a>
+                    <a href="#Projects" class="Navitem">Projects</a>
+
+                    <a href="#NogoPlayer" class="Navitem Indentation">Nogo Player</a>
                     <a href="#footerNav" class="Navitem">Footer</a>
                 </div>
             </div>
@@ -47,6 +61,17 @@
 
 .middleSplit {
     width: 70%;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #DEE4E7;
+}
+
+.subTitle {
+    color: rgb(16, 7, 58);
+    margin: 50px;
+    border-bottom-style: solid;
+
 }
 
 .rightSplit {
@@ -56,9 +81,9 @@
 .stickyNav {
     position: sticky;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 20%;
-    top: 30px;
+    top: 50px;
     color: #241D44;
 }
 
@@ -76,6 +101,16 @@
 .NavContent {
     margin-bottom: 10px; 
     text-shadow: 2px 2px 4px #a2b0ca;
+}
+
+.Indentation {
+    margin-left: 20px;
+}
+
+.aboutMeContent{
+    color: #000;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 a {
