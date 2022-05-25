@@ -3,7 +3,7 @@ import { Transition, TransitionGroup, ref, onMounted } from "vue";
 import { gsap } from 'gsap';
 import { commonAPI } from '../api/common.js';
 
-const { LinkedInClick, GithubClick } = commonAPI();
+const { LinkedInClick, GithubClick, ResumeDownloadClick } = commonAPI();
 
 const introText = ref('I\'m a recent graduate Computing Science & Statistics student at the University of Alberta.')
 const introTextShow = ref('')
@@ -145,7 +145,7 @@ function btnEnter(el, done) {
                     @enter="btnEnter"
                     :css="false"
                 >
-                    <v-btn class="btn" @click="GithubClick" variant="outlined" size="large">
+                    <v-btn class="btn" @click="ResumeDownloadClick" variant="outlined" size="large">
                         <v-icon start icon="mdi-file-account"></v-icon>
                         Resume   
                     </v-btn>
