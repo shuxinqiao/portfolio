@@ -7,7 +7,7 @@ function GithubClick() {
 };
 
 function ResumeDownloadClick() {
-    window.open("../src/assets/ShuxinQiao_Resume.pdf",'_blank')
+    window.open("../assets/ShuxinQiao_Resume.pdf",'_blank')
 };
 
 export function commonAPI() {

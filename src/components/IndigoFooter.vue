@@ -44,6 +44,8 @@ const AboutPage_3 = ref('Original code git is ');
                 <p>{{ name }}</p>
                 <p>{{ address }}</p>
                 <a class='link' href="mailto:shuxinqiao@gmail.com">{{ email }}</a>
+                <br>
+                <a class='link' href="../assets/ShuxinQiao_Resume.pdf" target="_blank">My Resume</a>
             </div>
 
         </div>
