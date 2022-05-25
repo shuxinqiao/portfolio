@@ -99,7 +99,7 @@ function btnEnter(el, done) {
 
 
 <template>
-    <div class="hero">
+    <div class="hero" id="headerNav">
 
         <video autoplay muted loop class="Hero-back-video">
             <source src="../assets/Hero-moon.mp4" type="video/mp4">
@@ -178,7 +178,7 @@ function btnEnter(el, done) {
     object-fit: cover;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    margin: auto;
     min-width: 100%;
     min-height: 100%;
     max-height: 100vh;
@@ -190,11 +190,10 @@ function btnEnter(el, done) {
     position: absolute;
     top: 45vh;
     left: 0;
-    z-index: 1;
 }
 
 .buttons {
-    font-family: 'roboto';
+    font-family: 'Bungee';
     padding: 20px;
     top: 65vh;
     justify-content: center;
@@ -234,7 +233,7 @@ function btnEnter(el, done) {
 }
 
 #intro_text {
-    font-family: 'roboto';
+    font-family: 'Century Gothic';
     color: rgba(150, 253, 109, 0.623);
     font-size: 20px;
     margin: 0;

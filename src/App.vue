@@ -1,29 +1,26 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import Hero from './components/Hero.vue';
-import AboutMe from './components/AboutMe.vue';
+import MainContent from './components/MainContent.vue';
 import IndigoFooter from './components/IndigoFooter.vue';
 </script>
 
 <template>
   
   <div>
-    
+
     <!-- full layout -->
     <div class="header">
       <Hero/>
     </div>
     
     <div class="content">
-
-      <div class="testblock">asd</div>
-      <div class="testblock">zxc</div>
+      <MainContent/>
     </div>
 
     <div class="footer">
       <IndigoFooter/>
     </div>
-
 
   </div>
   
@@ -33,7 +30,7 @@ import IndigoFooter from './components/IndigoFooter.vue';
 @import url(http://fonts.cdnfonts.com/css/roboto);
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif, rotobo;
+  font-family: Century Gothic, rotobo;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -42,6 +39,7 @@ import IndigoFooter from './components/IndigoFooter.vue';
 
 body, html {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -49,12 +47,10 @@ body, html {
   font-size: 40px;
   text-align: center;
   background: white;
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .content {
-  display: flex;
-  justify-content: center;
 }
 
 .testblock {
