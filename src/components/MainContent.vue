@@ -23,7 +23,7 @@
                         <p>A programmer and analyst inspired by tough problems.</p>
                         <br>
                     </div>
-                    <img src="../assets/profile_photo.jpg" class="profileImg"> 
+                    <img src="../assets/profile_photo.jpg" class="profileImg" alt="Shuxin Qiao's profile photo"> 
                 </div>
             </div>
 
@@ -33,23 +33,23 @@
                 <div class="skillIcons">
                     <ul>
                         <li class="iconNtext">
-                            <img src="../assets/python-svgrepo-com.svg">
+                            <img src="../assets/python-svgrepo-com.svg" alt="python language logo">
                             <span>Python</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/c-svgrepo-com.svg">
+                            <img src="../assets/c-svgrepo-com.svg" alt="C language logo">
                             <span>C</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/c-sharp-svgrepo-com.svg">
+                            <img src="../assets/c-sharp-svgrepo-com.svg" alt="C sharp language logo">
                             <span>C#</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/r-svgrepo-com.svg">
+                            <img src="../assets/r-svgrepo-com.svg" alt="R language logo">
                             <span>R</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/js-official-svgrepo-com.svg">
+                            <img src="../assets/js-official-svgrepo-com.svg" alt="JavaScript language logo">
                             <span>JavaScript</span>
                         </li>
                         
@@ -60,19 +60,19 @@
                 <div class="skillIcons">
                     <ul>
                         <li class="iconNtext">
-                            <img src="../assets/git-svgrepo-com.svg">
+                            <img src="../assets/git-svgrepo-com.svg" alt="git logo">
+                            <span>Git</span>
+                        </li>
+                        <li class="iconNtext">
+                            <img src="../assets/html-5-svgrepo-com.svg" alt="HTML 5 language logo">
                             <span>HTML</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/html-5-svgrepo-com.svg">
-                            <span>HTML</span>
-                        </li>
-                        <li class="iconNtext">
-                            <img src="../assets/css-3-svgrepo-com.svg">
+                            <img src="../assets/css-3-svgrepo-com.svg" alt="CSS 3 language logo">
                             <span>CSS</span>
                         </li>
                         <li class="iconNtext">
-                            <img src="../assets/logo.png">
+                            <img src="../assets/logo.png" alt="Vue framework logo">
                             <span>Vue</span>
                         </li>
                     </ul>

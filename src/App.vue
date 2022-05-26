@@ -10,14 +10,17 @@ import IndigoFooter from './components/IndigoFooter.vue';
   <div>
 
     <!-- full layout -->
+    <!-- Header -->
     <div class="header">
       <Hero/>
     </div>
     
+    <!-- Content -->
     <div class="content">
       <MainContent/>
     </div>
 
+    <!-- Footer -->
     <div class="footer">
       <IndigoFooter/>
     </div>

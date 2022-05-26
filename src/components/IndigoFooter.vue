@@ -14,8 +14,10 @@ const AboutPage_3 = ref('Original code git is ');
 </script>
 
 <template>
+    <!-- Footer Section -->
     <div class="indi_footer" id="footerNav">
 
+        <!-- Ref Buttons -->
         <div class="icon_btn">
             <v-btn
                 icon="mdi-linkedin"
@@ -29,8 +31,10 @@ const AboutPage_3 = ref('Original code git is ');
             ></v-btn>
         </div>
 
+        <!-- Footer Content -->
         <div class="half_split">
 
+            <!-- About Page -->
             <div class="left_half">
                 <h2 class="notesHead">About This Page</h2>
                 <p>{{ AboutPage }}</p>
@@ -39,6 +43,7 @@ const AboutPage_3 = ref('Original code git is ');
                 <p>{{ AboutPage_3 }}<a class='link' href="https://github.com/shuxinqiao/portfolio" target="_blank">here.</a></p>
             </div>
 
+            <!-- Contact Me -->
             <div class="right_half">
                 <h2 class="notesHead">Contact Me</h2>
                 <p>{{ name }}</p>
@@ -50,6 +55,7 @@ const AboutPage_3 = ref('Original code git is ');
 
         </div>
 
+        <!-- Footer Bottom Info -->
         <div class="bottom_CR">
             <p>Copyright ©2022 All rights reserved</p>
         </div>

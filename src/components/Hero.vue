@@ -99,12 +99,15 @@ function btnEnter(el, done) {
 
 
 <template>
+    <!-- Header Section -->
     <div class="hero" id="headerNav">
 
+        <!-- Video Background -->
         <video autoplay muted loop class="Hero-back-video">
             <source src="../assets/Hero-moon.mp4" type="video/mp4">
         </video>
         
+        <!-- Header Content -->
         <div class="Hero-content">
             <div>
                 <div class="nameIntro">
@@ -138,6 +141,7 @@ function btnEnter(el, done) {
 
             </div>
             
+            <!-- Header Buttons -->
             <div class="buttons">
 
                 <Transition appear
