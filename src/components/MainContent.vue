@@ -6,6 +6,14 @@ function DryBeanClick() {
 function NogoClick() {
     window.open("https://github.com/shuxinqiao/Nogo-MCTS-player",'_blank')
 };
+
+function VoterModelClick() {
+    window.open("https://github.com/shuxinqiao/VoterModel",'_blank')
+};
+
+function PPTClick() {
+    window.open("https://github.com/shuxinqiao/Cs-ppt-controller",'_blank')
+};
 </script>
 
 <template>
@@ -99,6 +107,17 @@ function NogoClick() {
                     </ul>
                 </div>
 
+                <!-- Third Line -->
+                <div class="skillIcons" id="first_line">
+                    <ul>
+                        <li class="iconNtext">
+                            <img src="../assets/linux-svgrepo-com.svg" alt="Linux logo">
+                            <span>Linux</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+
             </div>
 
 
@@ -111,7 +130,7 @@ function NogoClick() {
 
                     <!-- Dry Bean Card-->
                     <div class="card" id="DryBean">
-                        <img src="../assets/dry-bean.jpg" alt="7 dry bean types picture" style="width:320px">
+                        <img src="../assets/dry-bean.jpg" alt="7 dry bean types picture" style="width:360px">
                         <div class="cardContainer">
                             <h4><b>Dry Bean Classification - Python</b></h4>
                             <br>
@@ -134,7 +153,7 @@ function NogoClick() {
 
                     <!-- NoGo Game Card -->
                     <div class="card" id="Nogo">
-                        <img src="../assets/NoGo.png" alt="Nogo Game Screenshot" style="width:320px">
+                        <img src="../assets/NoGo.png" alt="Nogo Game Screenshot" style="width:360px">
                         <div class="cardContainer">
                             <h4><b>Nogo Game MCTS Player - Python</b></h4>
                             <br>
@@ -145,6 +164,49 @@ function NogoClick() {
                         <v-btn
                             icon="mdi-xml"
                             @click="NogoClick"
+                            variant="text"
+                            class="cardBtn"
+                        ></v-btn>
+                    </div>
+
+                    <!-- Voter Model Card -->
+                    <div class="card" id="VoterModel">
+                        <img src="../assets/voter_model.jpg" alt="Voter Model graph representation" style="width:360px">
+                        <div class="cardContainer">
+                            <h4><b>Voter Model Simulation for Rumor Spread - Python</b></h4>
+                            <br>
+                            <p>
+                                A mathematical model - Voter Model - simulation for rumor spread in a closed network environment.
+                                Strong math and stats base with clear equation from Martingale Problem and Markov Process.
+                            </p>
+                            <br>
+                            <p>Result report can be found in github page pdf file - "STAT 471 Group Report.pdf".</p>
+                        </div>
+                        <v-btn
+                            icon="mdi-xml"
+                            @click="VoterModelClick"
+                            variant="text"
+                            class="cardBtn"
+                        ></v-btn>
+                    </div>
+
+                    <!-- PPT Controller Card -->
+                    <div class="card" id="pptController">
+                        <img src="../assets/Cs_ppt_controller.PNG" alt="c sharp ppt controller screenshot" style="width:360px">
+                        <div class="cardContainer">
+                            <h4><b>C# PPT Controller - C# + WPF</b></h4>
+                            <br>
+                            <p>
+                                A WPF windows desktop application. Load ppt on desktop machine for displaying and allow remote control from users.
+                            </p>
+                            <br>
+                            <p>
+                                Uses websocket open local host and allow multiple local internet users controll ppt turn pages and read comments at the same time.
+                            </p>
+                        </div>
+                        <v-btn
+                            icon="mdi-xml"
+                            @click="PPTClick"
                             variant="text"
                             class="cardBtn"
                         ></v-btn>
@@ -171,6 +233,9 @@ function NogoClick() {
 
                     <a href="#DryBean" class="Navitem Indentation">Dry Bean Classification</a>
                     <a href="#Nogo" class="Navitem Indentation">Nogo Game Player</a>
+                    <a href="#VoterModel" class="Navitem Indentation">Voter Model</a>
+                    <a href="#pptController" class="Navitem Indentation">C# PPT Controller</a>
+
 
                     <a href="#footerNav" class="Navitem">Footer</a>
                 </div>
@@ -296,7 +361,8 @@ function NogoClick() {
     flex-direction: row;
     position: relative;
     margin-bottom: 50px;
-    background-color: rgba(120, 209, 154, 0.658);
+    color: #000000;
+    background-color: #e1ecf1;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
