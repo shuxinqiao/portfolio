@@ -37,7 +37,7 @@ import IndigoFooter from './components/IndigoFooter.vue';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #5f8bb8;
+  color: #000000;
 }
 
 body, html {
