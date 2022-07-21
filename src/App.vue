@@ -53,8 +53,6 @@ body, html {
   height: 100vh;
 }
 
-.content {
-}
 
 .testblock {
   height: 100vh;

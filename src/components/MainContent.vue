@@ -3,6 +3,10 @@ function DryBeanClick() {
     window.open("https://github.com/shuxinqiao/Dry-Bean-Classification",'_blank')
 };
 
+function ArchClick() {
+    window.open("https://github.com/shuxinqiao/Architectural-Heritage-Elements-Classification",'_blank')
+};
+
 function NogoClick() {
     window.open("https://github.com/shuxinqiao/Nogo-MCTS-player",'_blank')
 };
@@ -13,6 +17,10 @@ function VoterModelClick() {
 
 function PPTClick() {
     window.open("https://github.com/shuxinqiao/Cs-ppt-controller",'_blank')
+};
+
+function WebClick() {
+    window.open("https://github.com/shuxinqiao/portfolio",'_blank')
 };
 </script>
 
@@ -43,6 +51,9 @@ function PPTClick() {
                         <br>
                         <p>A programmer and analyst inspired by tough problems.</p>
                         <br>
+                        <p>I recently graduated from the University of Alberta with a Bachelor of Science major in Statistics and Computing Science.</p>
+                        <br>
+                        <p>Great interest in Data Science and Machine Learning area.</p>
                     </div>
                     <img src="../assets/profile_photo.jpg" class="profileImg" alt="Shuxin Qiao's profile photo"> 
                 </div>
@@ -96,13 +107,14 @@ function PPTClick() {
                             <img src="../assets/css-3-svgrepo-com.svg" alt="CSS 3 language logo">
                             <span>CSS</span>
                         </li>
-                        <li class="iconNtext">
-                            <img src="../assets/logo.png" alt="Vue framework logo">
-                            <span>Vue</span>
-                        </li>
+                        
                         <li class="iconNtext">
                             <img src="../assets/sql-database-generic-svgrepo-com.svg" alt="SQL logo">
                             <span>SQL</span>
+                        </li>
+                        <li class="iconNtext">
+                            <img src="../assets/linux-svgrepo-com.svg" alt="Linux logo">
+                            <span>Linux</span>
                         </li>
                     </ul>
                 </div>
@@ -111,10 +123,25 @@ function PPTClick() {
                 <div class="skillIcons" id="first_line">
                     <ul>
                         <li class="iconNtext">
-                            <img src="../assets/linux-svgrepo-com.svg" alt="Linux logo">
-                            <span>Linux</span>
+                            <img src="../assets/tensorflow-svgrepo-com.svg" alt="tensorflow logo">
+                            <span>TensorFlow</span>
                         </li>
-                        
+                        <li class="iconNtext">
+                            <img src="../assets/pytorch-svgrepo-com.svg" alt="pytorch logo">
+                            <span>Pytorch</span>
+                        </li>
+                        <li class="iconNtext">
+                            <img src="../assets/dotnet-svgrepo-com.svg" alt="Dotnet logo">
+                            <span>.Net</span>
+                        </li>
+                        <li class="iconNtext">
+                            <img src="../assets/logo.png" alt="Vue framework logo">
+                            <span>Vue</span>
+                        </li>
+                        <li class="iconNtext">
+                            <img src="../assets/SPSS_logo.svg" alt="SPSS logo">
+                            <span>SPSS</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -132,9 +159,11 @@ function PPTClick() {
                     <div class="card" id="DryBean">
                         <img src="../assets/dry-bean.jpg" alt="7 dry bean types picture" style="width:360px">
                         <div class="cardContainer">
-                            <h4><b>Dry Bean Classification - Python</b></h4>
+                            <h4><b>Dry Bean Classification - NumPy & Tensorflow Keras</b></h4>
                             <br>
-                            <p>Dry Bean Dataset pubulished by Selcuk University.</p>
+                            <p>CMPUT466 - Machine Learning project.
+                                Dry Bean Dataset pubulished by Selcuk University.
+                            </p>
                             <br>
                             <p>
                                 Uses Softmax Regression, SVM and Neural Network three models. Except NN used Keras,
@@ -151,6 +180,30 @@ function PPTClick() {
                         ></v-btn>
                     </div>
 
+                    <!-- Arch Card-->
+                    <div class="card" id="Arch">
+                        <img src="../assets/Arch.png" alt="Architectural elements" style="width:360px">
+                        <div class="cardContainer">
+                            <h4><b>Architectural Elements Image Classification - Pytorch</b></h4>
+                            <br>
+                            <p>
+                                Architectural Heritage Elements image Dataset pubulished by Jose Llamas on datahub.io.
+                            </p>
+                            <br>
+                            <p>
+                                Uses Transfer Learning from Pytorch Pretrained Residual Convolution Net 18 layers.
+                            </p>
+                            <br>
+                            <p>Result report can be found in github page.</p>
+                        </div>
+                        <v-btn
+                            icon="mdi-xml"
+                            @click="ArchClick"
+                            variant="text"
+                            class="cardBtn"
+                        ></v-btn>
+                    </div>
+
                     <!-- NoGo Game Card -->
                     <div class="card" id="Nogo">
                         <img src="../assets/NoGo.png" alt="Nogo Game Screenshot" style="width:360px">
@@ -158,8 +211,12 @@ function PPTClick() {
                             <h4><b>Nogo Game MCTS Player - Python</b></h4>
                             <br>
                             <p>
-                                A Monte Carlo Tree Search Player. Wins Quater-final in 200 attendence course.
+                                A Monte Carlo Tree Search Player for game Nogo.
                             </p>
+                            <br>
+                            <p>Wins Quarter-final in 200 attendence course - CMPUT 455 Course Tournament. </p>
+                            <br>
+                            <p>Used MC-UCT algorithms </p>
                         </div>
                         <v-btn
                             icon="mdi-xml"
@@ -173,7 +230,9 @@ function PPTClick() {
                     <div class="card" id="VoterModel">
                         <img src="../assets/voter_model.jpg" alt="Voter Model graph representation" style="width:360px">
                         <div class="cardContainer">
-                            <h4><b>Voter Model Simulation for Rumor Spread - Python</b></h4>
+                            <h4><b>Voter Model Simulation for Rumor Spread - NumPy</b></h4>
+                            <br>
+                            <p>Collaborated with two teammates on the Math model in course STAT 441 - Probability.</p>
                             <br>
                             <p>
                                 A mathematical model - Voter Model - simulation for rumor spread in a closed network environment.
@@ -192,9 +251,11 @@ function PPTClick() {
 
                     <!-- PPT Controller Card -->
                     <div class="card" id="pptController">
-                        <img src="../assets/Cs_ppt_controller.PNG" alt="c sharp ppt controller screenshot" style="width:360px">
+                        <img src="../assets/Cs_ppt_controller.png" alt="c sharp ppt controller screenshot" style="width:360px">
                         <div class="cardContainer">
-                            <h4><b>C# PPT Controller - C# + WPF</b></h4>
+                            <h4><b>C# PPT Controller - C# & WPF</b></h4>
+                            <br>
+                            <P>Learned C#, WPF, and .NET framework in development. A practical solution for personal real-life needs.</P>
                             <br>
                             <p>
                                 A WPF windows desktop application. Load ppt on desktop machine for displaying and allow remote control from users.
@@ -207,6 +268,26 @@ function PPTClick() {
                         <v-btn
                             icon="mdi-xml"
                             @click="PPTClick"
+                            variant="text"
+                            class="cardBtn"
+                        ></v-btn>
+                    </div>
+
+                    <!-- Portfolio Card -->
+                    <div class="card" id="portfolioWeb">
+                        <img src="../assets/PortfolioWebScreenShot.png" alt="Portfolio hero header screenshot" style="width:360px">
+                        <div class="cardContainer">
+                            <h4><b>Personal Portfolio - JS + CSS + Vue3</b></h4>
+                            <br>
+                            <P>Learned Vue 3 framework in development. A personal portfolio web page for personal needs.</P>
+                            <br>
+                            <p>
+                                A Vue 3 framework web page. Shows my progress, achievements and efforts.
+                            </p>
+                        </div>
+                        <v-btn
+                            icon="mdi-xml"
+                            @click="WebClick"
                             variant="text"
                             class="cardBtn"
                         ></v-btn>
@@ -235,6 +316,7 @@ function PPTClick() {
                     <a href="#Nogo" class="Navitem Indentation">Nogo Game Player</a>
                     <a href="#VoterModel" class="Navitem Indentation">Voter Model</a>
                     <a href="#pptController" class="Navitem Indentation">C# PPT Controller</a>
+                    <a href="#portfolioWeb" class="Navitem Indentation">Portfolio Web</a>
 
 
                     <a href="#footerNav" class="Navitem">Footer</a>
