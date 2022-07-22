@@ -313,6 +313,7 @@ function WebClick() {
                     <a href="#Projects" class="Navitem">Projects</a>
 
                     <a href="#DryBean" class="Navitem Indentation">Dry Bean Classification</a>
+                    <a href="#Arch" class="Navitem Indentation">Architectural Heritage Elements</a>
                     <a href="#Nogo" class="Navitem Indentation">Nogo Game Player</a>
                     <a href="#VoterModel" class="Navitem Indentation">Voter Model</a>
                     <a href="#pptController" class="Navitem Indentation">C# PPT Controller</a>
